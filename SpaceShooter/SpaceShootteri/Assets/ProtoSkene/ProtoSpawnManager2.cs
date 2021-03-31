@@ -14,21 +14,26 @@ public class ProtoSpawnManager2 : MonoBehaviour
     void Start()
     {
         waveCountDown = timeBetweenWaves[nextWave];
-        
+        //Debug.Log(timeBetweenWaves[nextWave]);
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        //Debug.Log(waveCountDown);
+        Debug.Log(waveCountDown);
 
         waveCountDown -= Time.deltaTime;
 
-        if (nextWave < waveCountDown)
+        if (waveCountDown <= 0)
         {
             //Debug.Log("wafeIF");
-            Spawnwave();
+            
             nextWave++;
+
+            //Spawnwave();
+            Instantiate(waveToSpawn[nextWave]);
+
+            waveCountDown = timeBetweenWaves[nextWave];
         }
 
     }
@@ -36,7 +41,7 @@ public class ProtoSpawnManager2 : MonoBehaviour
     public void Spawnwave()
     {
         Debug.Log(waveToSpawn[nextWave]);
-        Instantiate(waveToSpawn[nextWave]);
-        waveCountDown = timeBetweenWaves[nextWave];
+        
+       
     }
 }

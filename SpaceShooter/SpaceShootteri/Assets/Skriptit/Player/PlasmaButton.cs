@@ -32,7 +32,7 @@ public class PlasmaButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
     void FireMe()
     {
-        Debug.Log("firing" + Time.time);
+        //Debug.Log("firing" + Time.time);
         playerController.shootPlasme();
     }
 }
