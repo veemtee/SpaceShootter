@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &68174007174041484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68174007174041482}
+  - component: {fileID: 68174007174041483}
+  m_Layer: 0
+  m_Name: PopcornSpawn2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68174007174041482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68174007174041484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 33.2, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &68174007174041483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68174007174041484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427ff44e9d446542aaa041ee45d7f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnDelay: 0.1
+  spawnAmount: 30
+  vihuSpawnTyyppi:
+  - {fileID: 438227599789592386, guid: afe1b0273baa5fe42b1fe1072561b90c, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 835423031024514241, guid: f440d1467c2efd1418e392b96e59ae24, type: 3}
+  - {fileID: 6372077819845981027, guid: a7b9097214426af4a9cd00c745780598, type: 3}
+  - {fileID: 438227599789592386, guid: afe1b0273baa5fe42b1fe1072561b90c, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 835423031024514241, guid: f440d1467c2efd1418e392b96e59ae24, type: 3}
+  - {fileID: 6372077819845981027, guid: a7b9097214426af4a9cd00c745780598, type: 3}
+  - {fileID: 438227599789592386, guid: afe1b0273baa5fe42b1fe1072561b90c, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 835423031024514241, guid: f440d1467c2efd1418e392b96e59ae24, type: 3}
+  - {fileID: 835423031024514241, guid: f440d1467c2efd1418e392b96e59ae24, type: 3}
+  - {fileID: 835423031024514241, guid: f440d1467c2efd1418e392b96e59ae24, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 438227599789592386, guid: afe1b0273baa5fe42b1fe1072561b90c, type: 3}
+  - {fileID: 438227599789592386, guid: afe1b0273baa5fe42b1fe1072561b90c, type: 3}
+  - {fileID: 438227599789592386, guid: afe1b0273baa5fe42b1fe1072561b90c, type: 3}
+  - {fileID: 6372077819845981027, guid: a7b9097214426af4a9cd00c745780598, type: 3}
+  - {fileID: 6372077819845981027, guid: a7b9097214426af4a9cd00c745780598, type: 3}
+  - {fileID: 6372077819845981027, guid: a7b9097214426af4a9cd00c745780598, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  - {fileID: 8383074876097820473, guid: 5b208e3a6ad89924ea3b68601e7c3605, type: 3}
+  spawnTimer: 0
+  spawnIndex: 0

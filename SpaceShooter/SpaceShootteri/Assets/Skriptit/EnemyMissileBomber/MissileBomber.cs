@@ -101,7 +101,7 @@ public class MissileBomber : MonoBehaviour
 
     public void ShootMissiles()
     {
-        Debug.Log("shootmissilessa");
+        //Debug.Log("shootmissilessa");
         speed = 150000f;
         bomberRb.AddRelativeForce(transform.forward * speed * Time.deltaTime);
         bomberRb.AddForce(transform.right * -30000f * Time.deltaTime);

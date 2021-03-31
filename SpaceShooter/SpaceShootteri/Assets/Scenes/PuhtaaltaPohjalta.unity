@@ -464,7 +464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &78136470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78136469}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35ac29296d022604b8db4e9fd8046e82, type: 3}
   m_Name: 
@@ -21438,8 +21438,8 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1970810990}
   - {fileID: 1900877955}
-  timeBetweenWaves: 2
-  waveCountDown: 2
+  timeBetweenWaves: 1
+  waveCountDown: 1
   state: 0
 --- !u!4 &983377728 stripped
 Transform:
@@ -24927,6 +24927,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailgunboltRoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184908287650032567, guid: a18740ffa30d77745a4086081889811f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7184908287884557931, guid: a18740ffa30d77745a4086081889811f,
         type: 3}

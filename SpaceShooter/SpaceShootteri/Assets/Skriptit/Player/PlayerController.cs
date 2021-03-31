@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour // IPointerDownHandler, IPointerUp
 
     private void Update()
     {
-        print(joysick.Vertical);
+        //print(joysick.Vertical);
         //print(joysick.Horizontal);
 
         if (joysick.Horizontal <= .2f)
@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour // IPointerDownHandler, IPointerUp
     private void OnTriggerEnter(Collider VihuBullet)
     {
         
-            Debug.Log("PlayerControllervihubullet");
+            //Debug.Log("PlayerControllervihubullet");
             armoryCurrentHealth--;
             Destroy(VihuBullet.gameObject);
 

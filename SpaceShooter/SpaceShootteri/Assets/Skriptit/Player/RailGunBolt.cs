@@ -31,7 +31,7 @@ public class RailGunBolt : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         gameController.ScoreCount(3);
-        Debug.Log("lisääscoreajooko");
+        //Debug.Log("lisääscoreajooko");
         Instantiate(explosion, transform.position, transform.rotation);
     }
 }
