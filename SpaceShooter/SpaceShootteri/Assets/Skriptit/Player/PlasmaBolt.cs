@@ -9,12 +9,12 @@ public class PlasmaBolt : MonoBehaviour
     public GameObject explosion;
     public ParticleSystem plasmaEffect;
 
-    public GameController gameController;
+    public PointManager gameController;
 
     void Start()
     {
         rig.velocity = transform.forward * speed;
-        gameController = GameObject.Find("GameController").GetComponent<GameController>();
+        //gameController = GameObject.Find("PointManager").GetComponent<PointManager>();
         plasmaEffect.Play();
     }
 
