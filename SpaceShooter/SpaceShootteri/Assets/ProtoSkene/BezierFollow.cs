@@ -11,7 +11,7 @@ public class BezierFollow : MonoBehaviour
     private int routeToGo;
     private float tParam;
     private Vector2 objectPosition;
-    private float speedModifier;
+    public float speedModifier;
     private bool coroutineAllowed;
     // Start is called before the first frame update
 
@@ -52,6 +52,9 @@ public class BezierFollow : MonoBehaviour
             tParam += Time.deltaTime * speedModifier;
             objectPosition = Mathf.Pow(1 - tParam, 3) * p0 + 3 * Mathf.Pow(1 - tParam, 2) * tParam * p1 + 3 * (1 - tParam) * Mathf.Pow(tParam, 2) * p2 + Mathf.Pow(tParam, 3) * p3;
             //transform.LookAt(objectPosition);
+            //transform.LookAt.y(objectPosition.y);
+            Vector2 lookatPosition = new Vector3(this.transform.position.x, this.transform.position.y); //, objectPosition.z);
+            this.transform.LookAt(lookatPosition);
             transform.position = objectPosition;
             yield return new WaitForEndOfFrame();
         }

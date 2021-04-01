@@ -20,7 +20,7 @@ public class ProtoSpawnManager2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(waveCountDown);
+        //Debug.Log(waveCountDown);
 
         waveCountDown -= Time.deltaTime;
 
