@@ -6,12 +6,12 @@ using UnityEngine.EventSystems;
 
 public class PlasmaButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public PlayerController playerController;
+    public PlayerControllerYX playerController;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerController = GameObject.Find("PlayerRoot").GetComponent<PlayerController>();
+        playerController = GameObject.Find("PlayerRoot").GetComponent<PlayerControllerYX>();
     }
 
     // Update is called once per frame

@@ -19,12 +19,15 @@ public class VihuBolt : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider Player)
+    private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("vihuboltScript");
-        //PC.armoryCurrentHealth--;
-        Instantiate(explosion, transform.position, transform.rotation);
-        Destroy(gameObject);
+        if (other.tag == ("Player"))
+        {
+            //Debug.Log("vihuboltScript");
+            //PC.armoryCurrentHealth--;
+            Instantiate(explosion, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     } 
     
 }

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 977811492747852734}
   m_LocalRotation: {x: -0.3916824, y: 0.5887718, z: -0.5885665, w: 0.39181912}
   m_LocalPosition: {x: 0.076741695, y: 0.022530168, z: -0.0651117}
-  m_LocalScale: {x: 299.99997, y: 299.99994, z: 300}
+  m_LocalScale: {x: 150, y: 150, z: 150}
   m_Children: []
   m_Father: {fileID: 6351112299477517933}
   m_RootOrder: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 4673646416645444000}
-  speed: 60
+  speed: 80
   explosion: {fileID: 5351690341099623117, guid: 9727e5aba7ce23d4ab04d058d69c5221,
     type: 3}
   plasmaEffect: {fileID: 6351112299650060200}

@@ -71,11 +71,11 @@ using UnityEngine.EventSystems;
 
             if (joysick.Vertical <= .2f)
             {
-                spaceShip.transform.Translate(Vector3.up * speed * Time.deltaTime);
+                spaceShip.transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
             if (joysick.Vertical >= -.2f)
             {
-                spaceShip.transform.Translate(Vector3.up * -speed * Time.deltaTime);
+                spaceShip.transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
             else
             {

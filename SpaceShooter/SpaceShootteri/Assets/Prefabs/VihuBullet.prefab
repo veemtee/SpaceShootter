@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 7388560874265706435}
-  speed: 20
+  speed: 120
   explosion: {fileID: 5351690341099623117, guid: 9727e5aba7ce23d4ab04d058d69c5221,
     type: 3}
 --- !u!1 &7388560874696380904
