@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PopVihu : MonoBehaviour
+public class cleanerScript : MonoBehaviour
 {
-    public GameObject explosion;
-    public GameObject popBolt;
-
-
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("delete", 8f);
     }
 
     // Update is called once per frame
@@ -20,9 +16,8 @@ public class PopVihu : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void delete()
     {
-        Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }
