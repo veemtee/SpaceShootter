@@ -16,26 +16,26 @@ public class Interceptor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("NOH!?");
+        //Debug.Log("NOH!?");
     }
 
     // Update is called once per frame
     void Update()
     {
-        lastfire = Time.time + firerate;
+        //lastfire = Time.time + firerate;
 
-        Instantiate(bullet, gunSpawns[shotIndex].transform.position, gunSpawns[shotIndex].transform.rotation);
-        shotIndex++;
-        if (shotIndex > 1)
-            shotIndex = 0;
+        //Instantiate(bullet, gunSpawns[shotIndex].transform.position, gunSpawns[shotIndex].transform.rotation);
+        //shotIndex++;
+        //if (shotIndex > 1)
+        //    shotIndex = 0;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("NOH!?");
+        Debug.Log("Hoh");
         if (other.tag == ("Player"))
         {
-            
+            Debug.Log("NOH!?");
             lastfire = Time.time + firerate;
 
             Instantiate(bullet, gunSpawns[shotIndex].transform.position, gunSpawns[shotIndex].transform.rotation);

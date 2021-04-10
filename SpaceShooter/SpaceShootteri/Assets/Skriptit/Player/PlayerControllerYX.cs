@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
     [System.Serializable]
     public class BoundaryYX
     {
-        public float xmin, xMax, zMin, Zmax;
+        public float xmin, xMax, zMin, zmax;
     }
 
     public class PlayerControllerYX : MonoBehaviour // IPointerDownHandler, IPointerUpHandler
@@ -113,19 +113,20 @@ using UnityEngine.EventSystems;
             rig.velocity = movement * speed;
 
 
-            rig.position = new Vector3(Mathf.Clamp(rig.position.x, boundary.xmin, boundary.xMax), 0.0f, Mathf.Clamp(rig.position.z, boundary.zMin, boundary.Zmax));
+            rig.position = new Vector3(Mathf.Clamp(rig.position.x, boundary.xmin, boundary.xMax), 0.0f, Mathf.Clamp(rig.position.y, boundary.zMin, boundary.Zmax));
 
             rig.rotation = Quaternion.Euler(rig.rotation.x,/* 0.0f*/ rig.velocity.x * panning + 180, rig.velocity.x * tilt);
         }
 
 
 
-        private void OnTriggerEnter(Collider VihuBullet)
+        private void OnTriggerEnter(Collider other)
         {
-
-            //Debug.Log("PlayerControllervihubullet");
+             if (other.tag == "VihuBullet")
+            {//Debug.Log("PlayerControllervihubullet");
             armoryCurrentHealth--;
-            Destroy(VihuBullet.gameObject);
+            Destroy(gameObject);
+            }
 
         }
 
