@@ -29,6 +29,7 @@ public class AutoRotate : MonoBehaviour
     IEnumerator DoRotate()
     {
         Quaternion targetRotation = Quaternion.Euler(transform.localRotation.eulerAngles + angleRotation);
+        
 
         if (endless)
         {
@@ -40,7 +41,7 @@ public class AutoRotate : MonoBehaviour
         }
         else
         {
-            while (transform.rotation != targetRotation)
+            while (transform.localRotation != targetRotation)
             {
                 transform.localRotation = Quaternion.RotateTowards(transform.localRotation,
                     targetRotation, speed * Time.deltaTime);

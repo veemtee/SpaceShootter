@@ -62,7 +62,7 @@ public class EnemyWaves : MonoBehaviour
 
     IEnumerator CheckCombo()
     {
-        yield return disableAfter;
+        yield return new WaitForSeconds(transform.childCount); //disableAfter;
 
         if (transform.childCount == 0)
         {

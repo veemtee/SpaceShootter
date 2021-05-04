@@ -25,6 +25,7 @@ public class HealthSystem : MonoBehaviour
 
     private void Start()
     {
+        if (isEnemy) LevelManager.instance.RegisterEnemy();
         deathScript = GetComponent<DeathSystem>();
     }
 
@@ -32,6 +33,8 @@ public class HealthSystem : MonoBehaviour
     {
         if (other.CompareTag(tagName))
         {
+            if (!isEnemy)
+                LevelManager.instance.PlayerHit();
             //iskemäefektille osumakulmaa KAI eli laske tagien tarkka osumakohta, triggerin keskeltä suunta osumakohtaan ja luo fx objekti poolista hae
             //hiteffecti ja laita se tarkkaan osumakohtaan ja katsontasuunta kohti osutun objektin keskelle nice?!? voisko lyya maanantaiprojektiin tulitus
             //effektiin esim miehistönkuljetusvaunuun JÖÖ
@@ -72,7 +75,7 @@ public class HealthSystem : MonoBehaviour
             {
                 dead = true;
                 gameObject.tag = "Untagged";
-               // LevelManager.instance.AddEnemyKill(Random.Range(minScore, maxScore));
+                LevelManager.instance.AddEnemyKill(); //(Random.Range(minScore, maxScore));
             }
         }
     }

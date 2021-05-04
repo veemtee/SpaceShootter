@@ -6,7 +6,7 @@ public class bulletMove : MonoBehaviour
 {
 
     public float speed;
-    private Rigidbody myRb;
+    protected Rigidbody myRb;
 
     // Start is called before the first frame update
     void Start()
