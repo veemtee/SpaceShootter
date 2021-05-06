@@ -42,6 +42,10 @@ public class PlayerController : MonoBehaviour // IPointerDownHandler, IPointerUp
 
     public AudioSource audios;
 
+    public BulletSpawnRotator spawnRotator;
+
+    public bool firemode = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -80,16 +84,42 @@ public class PlayerController : MonoBehaviour // IPointerDownHandler, IPointerUp
             spaceShip.transform.Translate(Vector3.forward * 0);
         }
 
-        /* if (Input.GetButton("Fire1") && Time.time > lastFire)
+         if (Input.GetButton("Fire1") && Time.time > lastFire)
          {
-             lastFire = Time.time + fireRate;
+            if (firemode == true)
+            {
+                spawnRotator.concentraded();
 
-             Instantiate(bullet, sarjaSpawn[shotIndex].transform.position, sarjaSpawn[shotIndex].transform.rotation);
-             //suuliekki.Play();
-             shotIndex++;
-             if (shotIndex > 3)
-                 shotIndex = 0;
-         } */
+                lastFire = Time.time + fireRate;
+
+                Instantiate(bullet, sarjaSpawn[shotIndex].transform.position, sarjaSpawn[shotIndex].transform.rotation);
+                //suuliekki.Play();
+                shotIndex++;
+                if (shotIndex > 3)
+                    shotIndex = 0;
+
+
+                firemode = false;
+
+            }
+
+            else if (firemode == false)
+            {
+                spawnRotator.speaded();
+
+                lastFire = Time.time + fireRate;
+
+                Instantiate(bullet, sarjaSpawn[shotIndex].transform.position, sarjaSpawn[shotIndex].transform.rotation);
+                //suuliekki.Play();
+                shotIndex++;
+                if (shotIndex > 3)
+                    shotIndex = 0;
+
+                
+                    firemode = true;
+                
+            }
+         } 
 
 
     }

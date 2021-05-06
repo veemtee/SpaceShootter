@@ -129,7 +129,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!65 &2980193028192197560
 BoxCollider:
@@ -191,3 +191,4 @@ MonoBehaviour:
     type: 3}
   playerExplosion: {fileID: 5351690341099623117, guid: 6d559eec61291fe428b73150a0eacaff,
     type: 3}
+  gameController: {fileID: 0}

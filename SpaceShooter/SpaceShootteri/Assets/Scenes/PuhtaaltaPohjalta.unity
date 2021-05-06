@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0165241, g: 0.008262239, b: 0.002043076, a: 1}
+  m_IndirectSpecularColor: {r: 0.016524073, g: 0.008262196, b: 0.002043068, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -464,7 +464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &78136470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,10 +480,10 @@ MonoBehaviour:
   Asteroid:
   - {fileID: 6117898810971736033, guid: 48eb246fce073454b867a7c082203664, type: 3}
   - {fileID: 2980193028192197508, guid: 365921780a4c9994e9610df62ff90eed, type: 3}
-  - {fileID: 9186533098736743818, guid: 852abb17a09d1ce43a93b5962ecc36d6, type: 3}
-  - {fileID: 9186533098736743818, guid: 852abb17a09d1ce43a93b5962ecc36d6, type: 3}
+  - {fileID: 2980193028192197508, guid: 365921780a4c9994e9610df62ff90eed, type: 3}
   - {fileID: 6117898810971736033, guid: 48eb246fce073454b867a7c082203664, type: 3}
-  - {fileID: 9186533098736743818, guid: 852abb17a09d1ce43a93b5962ecc36d6, type: 3}
+  - {fileID: 6117898810971736033, guid: 48eb246fce073454b867a7c082203664, type: 3}
+  - {fileID: 2980193028192197508, guid: 365921780a4c9994e9610df62ff90eed, type: 3}
   spawnValue: {x: 40, y: 0, z: 140}
   waveCount: 3
   spawnWait: 0.6
@@ -913,7 +913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587851716}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &246443614
 GameObject:
@@ -1076,7 +1076,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1587851716}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!4 &308308869 stripped
 Transform:
@@ -3511,7 +3511,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a183295f11af6b84c8e0bbbe150a7342,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a183295f11af6b84c8e0bbbe150a7342,
         type: 3}
@@ -4288,6 +4288,7 @@ GameObject:
   - component: {fileID: 1719961008}
   - component: {fileID: 1719961010}
   - component: {fileID: 1719961011}
+  - component: {fileID: 1719961012}
   m_Layer: 0
   m_Name: PlayerRoot
   m_TagString: Player
@@ -4353,6 +4354,8 @@ MonoBehaviour:
   explosion: {fileID: 5351690341099623117, guid: 6d559eec61291fe428b73150a0eacaff,
     type: 3}
   audios: {fileID: 1719961011}
+  spawnRotator: {fileID: 1719961012}
+  firemode: 1
 --- !u!65 &1719961008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4492,6 +4495,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1719961012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719961005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81dab0fb7c83b764899b618fdfaf9601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn1: {fileID: 1721729508}
+  spawn2: {fileID: 1158279496}
+  spawn3: {fileID: 1469841767}
+  spawn4: {fileID: 302009837}
 --- !u!1 &1721729508
 GameObject:
   m_ObjectHideFlags: 0
